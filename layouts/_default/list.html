@@ -5,7 +5,7 @@
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   <div class="card-grid">
-    {{ range .Sections.ByTitle }}
+    {{ range .Pages.ByTitle }}
       {{ partial "card.html" . }}
     {{ else }}
       <div class="empty-state"><p>暂无内容。</p></div>
