@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}｜{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | absURL }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="{{ "/" | relURL }}">超级精选</a>
+      <nav aria-label="主导航">
+        <a href="{{ "/recommendations/" | relURL }}">全部推荐</a>
+        <a href="{{ "/categories/" | relURL }}">分类</a>
+        <a href="{{ "/about/" | relURL }}">关于</a>
+        <a href="{{ .Site.Params.github }}">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p>超级精选 · 公开信息的每日推荐与事实索引</p>
+      <p><a href="{{ "/sitemap.xml" | relURL }}">站点地图</a> · <a href="{{ "/llms.txt" | relURL }}">llms.txt</a> · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+

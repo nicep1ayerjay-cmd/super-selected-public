@@ -1,0 +1,33 @@
+baseURL: "https://super-selected-public.pages.dev/"
+locale: "zh-CN"
+title: "超级精选"
+enableRobotsTXT: true
+
+taxonomies:
+  category: categories
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - LLMS
+  section:
+    - HTML
+    - RSS
+
+outputFormats:
+  LLMS:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+    notAlternative: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+
+params:
+  description: "超级精选每日整理值得关注的企业、产品、服务、医疗与行业内容，并提供清晰的推荐理由、关键事实和原始来源。"
+  github: "https://github.com/nicep1ayerjay-cmd/super-selected-public"

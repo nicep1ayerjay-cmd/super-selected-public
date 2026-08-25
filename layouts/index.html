@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <section class="hero">
+    <p class="eyebrow">DAILY CURATED INDEX</p>
+    <h1>超级精选</h1>
+    <p>{{ .Site.Params.description }}</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ "/recommendations/" | relURL }}">查看全部推荐</a>
+      <a class="button button-secondary" href="{{ .Site.Params.github }}">阅读公开 Markdown</a>
+    </div>
+  </section>
+
+  {{ $pages := where .Site.RegularPages "Section" "recommendations" }}
+  <section class="section-heading">
+    <div>
+      <p class="eyebrow">LATEST 20</p>
+      <h2>最新推荐</h2>
+    </div>
+    <a href="{{ "/recommendations/" | relURL }}">全部推荐 →</a>
+  </section>
+  {{ if $pages }}
+    <div class="card-grid">
+      {{ range first 20 $pages.ByDate.Reverse }}
+        {{ partial "card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="empty-state">
+      <h2>第一批推荐正在整理</h2>
+      <p>内容发布后，首页会自动显示最新 20 篇，并同步更新 GitHub README。</p>
+    </div>
+  {{ end }}
+
+  <section class="section-heading">
+    <div>
+      <p class="eyebrow">CATEGORIES</p>
+      <h2>按分类浏览</h2>
+    </div>
+  </section>
+  <div class="category-list">
+    {{ range .Site.Taxonomies.categories.ByCount }}
+      <a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><strong>{{ .Count }}</strong></a>
+    {{ else }}
+      <span class="muted">分类将在首篇推荐发布后生成。</span>
+    {{ end }}
+  </div>
+{{ end }}
+

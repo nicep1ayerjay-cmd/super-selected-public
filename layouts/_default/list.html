@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="eyebrow">SUPER SELECTED</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="card-grid">
+    {{ range .Pages.ByDate.Reverse }}
+      {{ partial "card.html" . }}
+    {{ else }}
+      <div class="empty-state"><p>暂无内容。</p></div>
+    {{ end }}
+  </div>
+{{ end }}
+
