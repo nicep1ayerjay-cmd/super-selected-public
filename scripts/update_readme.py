@@ -65,7 +65,7 @@ def main() -> None:
             categories = data.get("categories", [])
             category = categories[0] if isinstance(categories, list) and categories else "综合"
             slug = path.stem
-            site_url = f"https://super-selected-public.pages.dev/recommendations/{slug}/"
+            site_url = f"https://super-selected-daily.pages.dev/recommendations/{slug}/"
             repo_path = f"content/recommendations/{path.name}"
             lines.append(
                 f"- {date:%Y-%m-%d} · {category} · [{title}]({site_url}) "
@@ -87,4 +87,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
