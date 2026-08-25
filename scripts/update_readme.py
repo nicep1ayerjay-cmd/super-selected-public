@@ -66,10 +66,8 @@ def main() -> None:
             category = categories[0] if isinstance(categories, list) and categories else "综合"
             slug = path.stem
             site_url = f"https://super-selected-daily.pages.dev/recommendations/{slug}/"
-            repo_path = f"content/recommendations/{path.name}"
             lines.append(
-                f"- {date:%Y-%m-%d} · {category} · [{title}]({site_url}) "
-                f"([Markdown]({repo_path}))"
+                f"- {date:%Y-%m-%d} · {category} · [{title}]({site_url})"
             )
 
     readme = README.read_text(encoding="utf-8")

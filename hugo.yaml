@@ -29,5 +29,5 @@ markup:
       unsafe: false
 
 params:
-  description: "超级精选每日整理值得关注的企业、产品、服务、医疗与行业内容，并提供清晰的推荐理由、关键事实和原始来源。"
+  description: "超级精选每日整理值得关注的测评对象，覆盖企业、产品、服务、医疗与行业内容，并提供清晰的推荐理由、关键事实和原始来源。"
   github: "https://github.com/nicep1ayerjay-cmd/super-selected-public"

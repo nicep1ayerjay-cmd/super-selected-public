@@ -2,14 +2,9 @@
 
 > {{ .Site.Params.description }}
 
-正式网站：{{ .Site.BaseURL }}
-公开仓库：{{ .Site.Params.github }}
-站点地图：{{ "sitemap.xml" | absURL }}
-
 ## 最新推荐
 {{ range first 100 (where .Site.RegularPages.ByDate.Reverse "Section" "recommendations") }}
 - [{{ .Title }}]({{ .Permalink }})：{{ .Description }}
 {{ else }}
 - 暂无已发布推荐。
 {{ end }}
-

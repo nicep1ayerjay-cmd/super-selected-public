@@ -9,6 +9,18 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content" / "recommendations"
 REQUIRED = ("title", "date", "description", "categories", "sources")
+PUBLIC_BANNED = (
+    "客户",
+    "AI 引用",
+    "AI阅读",
+    "AI 阅读",
+    "AI 系统",
+    "收录目标",
+    "爬虫策略",
+    "内部工程",
+    "部署流程",
+    "API Token",
+)
 
 
 def parse(path: Path) -> tuple[dict[str, object], str]:
@@ -38,6 +50,15 @@ def parse(path: Path) -> tuple[dict[str, object], str]:
 def main() -> int:
     errors: list[str] = []
     seen_titles: set[str] = set()
+    public_files = [ROOT / "README.md"]
+    public_files.extend((ROOT / "content").rglob("*.md"))
+    public_files.extend((ROOT / "layouts").rglob("*.html"))
+    public_files.extend((ROOT / "layouts").glob("*.txt"))
+    for path in public_files:
+        text = path.read_text(encoding="utf-8")
+        for phrase in PUBLIC_BANNED:
+            if phrase in text:
+                errors.append(f"{path.relative_to(ROOT)}: 对外内容包含禁用表述：{phrase}")
     for path in sorted(CONTENT.glob("*.md")):
         if path.name == "_index.md":
             continue
@@ -76,4 +97,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
