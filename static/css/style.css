@@ -53,6 +53,16 @@ nav a:hover { color: var(--accent); }
 .prose h2 { margin-top: 2.4em; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 1.8rem; }
 .prose blockquote { margin-inline: 0; padding: 4px 20px; border-left: 3px solid var(--accent); color: var(--muted); }
 .prose img { max-width: 100%; height: auto; }
+.prose h1 { margin-top: 1.8em; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: clamp(2.2rem, 6vw, 4.2rem); line-height: 1.12; }
+.prose h3, .prose h4 { margin-top: 2em; line-height: 1.35; }
+.prose table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; background: var(--surface); }
+.prose th, .prose td { min-width: 150px; padding: 10px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; color: var(--muted); font-size: .9rem; }
+.object-directory { margin-bottom: 52px; padding: 28px; border: 1px solid var(--line); background: var(--surface); }
+.object-directory h2 { margin: 0 0 18px; font-family: Georgia, "Noto Serif CJK SC", serif; }
+.object-directory ul { columns: 2; margin: 0; padding-left: 20px; }
+.object-directory li { break-inside: avoid; margin-bottom: 8px; }
+.object-directory li span { margin-left: 8px; color: var(--muted); font-size: .78rem; }
 .sources { margin-top: 52px; padding: 24px; border: 1px solid var(--line); background: var(--surface); }
 .sources h2 { margin-top: 0; }
 .site-footer { margin-top: 90px; border-top: 1px solid var(--line); color: var(--muted); }
@@ -68,6 +78,6 @@ nav a:hover { color: var(--accent); }
   .nav { align-items: flex-start; padding: 16px 0; }
   nav { flex-wrap: wrap; justify-content: flex-end; gap: 8px 14px; }
   .card-grid, .category-list { grid-template-columns: 1fr; }
+  .object-directory ul { columns: 1; }
   .footer-grid { align-items: flex-start; flex-direction: column; padding: 28px 0; }
 }
-

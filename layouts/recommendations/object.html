@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article class="article object-page">
+    <nav class="breadcrumbs" aria-label="面包屑"><a href="{{ "/recommendations/" | relURL }}">全部精选对象</a><span>›</span><span>{{ .Params.object_name }}</span></nav>
+    <section class="object-directory" aria-labelledby="object-directory-title">
+      <p class="eyebrow">CONTENT DIRECTORY</p>
+      <h2 id="object-directory-title">{{ .Params.object_name }}内容目录</h2>
+      <ul>
+        {{ range .RegularPages.ByWeight }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if eq .Params.page_kind "review" }}<span>专项测评</span>{{ end }}</li>
+        {{ end }}
+      </ul>
+    </section>
+    <div class="prose">{{ .Content }}</div>
+    {{ with .Params.sources }}
+      <section class="sources">
+        <h2>原始来源</h2>
+        <ul>{{ range . }}<li><a href="{{ .url }}" rel="noopener noreferrer">{{ .name }}</a></li>{{ end }}</ul>
+      </section>
+    {{ end }}
+  </article>
+{{ end }}

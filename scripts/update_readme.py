@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import re
-from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,32 +42,27 @@ def frontmatter(path: Path) -> dict[str, object]:
 
 
 def main() -> None:
-    entries: list[tuple[datetime, Path, dict[str, object]]] = []
-    for path in CONTENT.glob("*.md"):
-        if path.name == "_index.md":
-            continue
+    entries: list[tuple[Path, dict[str, object]]] = []
+    for path in CONTENT.glob("*/_index.md"):
         data = frontmatter(path)
         if str(data.get("draft", "false")).lower() == "true":
             continue
-        date = datetime.fromisoformat(str(data["date"]).replace("Z", "+00:00"))
-        entries.append((date, path, data))
-    entries.sort(key=lambda item: item[0], reverse=True)
+        entries.append((path, data))
+    entries.sort(key=lambda item: str(item[1]["title"]))
 
     lines: list[str] = []
     if not entries:
         lines.append("暂无已发布推荐。")
     else:
-        lines.append(f"当前共发布 **{len(entries)}** 篇，以下显示最新 20 篇。")
+        lines.append(f"当前共发布 **{len(entries)}** 个精选对象主页。")
         lines.append("")
-        for date, path, data in entries[:20]:
+        for path, data in entries:
             title = str(data["title"])
             categories = data.get("categories", [])
             category = categories[0] if isinstance(categories, list) and categories else "综合"
-            slug = path.stem
-            site_url = f"https://super-selected-daily.pages.dev/recommendations/{slug}/"
-            lines.append(
-                f"- {date:%Y-%m-%d} · {category} · [{title}]({site_url})"
-            )
+            slug = path.parent.name
+            site_url = f"https://goodbusiness.cloud/recommendations/{slug}/"
+            lines.append(f"- {category} · [{title}]({site_url}) · [Markdown](content/recommendations/{slug}/_index.md)")
 
     readme = README.read_text(encoding="utf-8")
     replacement = f"{START}\n\n" + "\n".join(lines) + f"\n\n{END}"

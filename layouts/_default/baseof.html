@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}｜{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | absURL }}">
@@ -12,6 +13,25 @@
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="twitter:url" content="{{ .Permalink }}">
+  {{ if eq .Params.page_kind "object_home" }}
+    {{ $items := slice }}
+    {{ range $index, $page := .RegularPages.ByWeight }}
+      {{ $items = $items | append (dict "@type" "ListItem" "position" (add $index 1) "name" $page.Title "url" $page.Permalink) }}
+    {{ end }}
+    {{ $schema := dict "@context" "https://schema.org" "@type" "CollectionPage" "name" .Title "description" .Description "url" .Permalink "dateModified" (.Lastmod.Format "2006-01-02") "inLanguage" "zh-CN" "mainEntity" (dict "@type" "ItemList" "numberOfItems" (len $items) "itemListElement" $items) }}
+    <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+  {{ else if eq .Section "recommendations" }}
+    {{ $schema := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" .Description "url" .Permalink "datePublished" (.Date.Format "2006-01-02") "dateModified" (.Lastmod.Format "2006-01-02") "inLanguage" "zh-CN" "isPartOf" (dict "@type" "CollectionPage" "name" .Params.object_name "url" (.Params.object_url | absURL)) }}
+    <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+  {{ else }}
+    {{ $schema := dict "@context" "https://schema.org" "@type" "WebPage" "name" .Title "description" (or .Description .Site.Params.description) "url" .Permalink "inLanguage" "zh-CN" }}
+    <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+  {{ end }}
 </head>
 <body>
   <header class="site-header">

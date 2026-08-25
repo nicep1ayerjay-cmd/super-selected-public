@@ -9,24 +9,25 @@
     </div>
   </section>
 
-  {{ $pages := where .Site.RegularPages "Section" "recommendations" }}
+  {{ $recommendations := .Site.GetPage "/recommendations" }}
+  {{ $pages := $recommendations.Sections }}
   <section class="section-heading">
     <div>
-      <p class="eyebrow">LATEST 20</p>
-      <h2>最新推荐</h2>
+      <p class="eyebrow">SELECTED OBJECTS</p>
+      <h2>全部精选对象</h2>
     </div>
     <a href="{{ "/recommendations/" | relURL }}">全部推荐 →</a>
   </section>
   {{ if $pages }}
     <div class="card-grid">
-      {{ range first 20 $pages.ByDate.Reverse }}
+      {{ range $pages.ByTitle }}
         {{ partial "card.html" . }}
       {{ end }}
     </div>
   {{ else }}
     <div class="empty-state">
-      <h2>第一批推荐正在整理</h2>
-      <p>内容发布后，首页会自动显示最新 20 篇，并同步更新 GitHub README。</p>
+      <h2>第一批精选对象正在整理</h2>
+      <p>内容发布后，首页会显示全部对象主页，并同步更新 GitHub README。</p>
     </div>
   {{ end }}
 
@@ -44,4 +45,3 @@
     {{ end }}
   </div>
 {{ end }}
-

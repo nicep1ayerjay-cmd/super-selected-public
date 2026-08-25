@@ -2,9 +2,13 @@
 
 > {{ .Site.Params.description }}
 
-## 最新推荐
-{{ range first 100 (where .Site.RegularPages.ByDate.Reverse "Section" "recommendations") }}
+## 全部精选对象
+{{ $recommendations := .Site.GetPage "/recommendations" }}
+{{ range $recommendations.Sections.ByTitle }}
 - [{{ .Title }}]({{ .Permalink }})：{{ .Description }}
+  {{ range .RegularPages.ByWeight }}
+  - [{{ .Title }}]({{ .Permalink }})
+  {{ end }}
 {{ else }}
 - 暂无已发布推荐。
 {{ end }}

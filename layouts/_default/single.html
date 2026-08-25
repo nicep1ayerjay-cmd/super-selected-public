@@ -1,13 +1,6 @@
 {{ define "main" }}
   <article class="article">
-    <header class="article-header">
-      <div class="meta">
-        {{ range .Params.categories }}<a href="{{ (printf "/categories/%s/" (. | urlize)) | relURL }}">{{ . }}</a>{{ end }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年01月02日" }}</time>
-      </div>
-      <h1>{{ .Title }}</h1>
-      {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
-    </header>
+    <nav class="breadcrumbs" aria-label="面包屑"><a href="{{ "/recommendations/" | relURL }}">全部精选对象</a><span>›</span><a href="{{ .Params.object_url | relURL }}">{{ .Params.object_name }}</a><span>›</span><span>{{ .Title }}</span></nav>
     <div class="prose">{{ .Content }}</div>
     {{ with .Params.sources }}
       <section class="sources">
@@ -19,4 +12,3 @@
     {{ end }}
   </article>
 {{ end }}
-

@@ -50,6 +50,7 @@ def parse(path: Path) -> tuple[dict[str, object], str]:
 def main() -> int:
     errors: list[str] = []
     seen_titles: set[str] = set()
+    seen_descriptions: dict[str, Path] = {}
     public_files = [ROOT / "README.md"]
     public_files.extend((ROOT / "content").rglob("*.md"))
     public_files.extend((ROOT / "layouts").rglob("*.html"))
@@ -59,33 +60,46 @@ def main() -> int:
         for phrase in PUBLIC_BANNED:
             if phrase in text:
                 errors.append(f"{path.relative_to(ROOT)}: 对外内容包含禁用表述：{phrase}")
-    for path in sorted(CONTENT.glob("*.md")):
-        if path.name == "_index.md":
+    object_dirs = sorted(path for path in CONTENT.iterdir() if path.is_dir())
+    for object_dir in object_dirs:
+        required_paths = [object_dir / "_index.md", object_dir / "object-profile.md", object_dir / "all-reviews.md"]
+        for required_path in required_paths:
+            if not required_path.exists():
+                errors.append(f"{object_dir.name}: 缺少 {required_path.name}")
+        if not list(object_dir.glob("review-*.md")):
+            errors.append(f"{object_dir.name}: 缺少专项测评页面")
+    for path in sorted(CONTENT.rglob("*.md")):
+        if path == CONTENT / "_index.md":
             continue
         try:
             data, body = parse(path)
         except ValueError as exc:
-            errors.append(f"{path.name}: {exc}")
+            errors.append(f"{path.relative_to(CONTENT)}: {exc}")
             continue
         for field in REQUIRED:
             if not data.get(field):
-                errors.append(f"{path.name}: 缺少字段 {field}")
+                errors.append(f"{path.relative_to(CONTENT)}: 缺少字段 {field}")
         title = str(data.get("title", "")).strip()
         if title in seen_titles:
-            errors.append(f"{path.name}: 标题重复：{title}")
+            errors.append(f"{path.relative_to(CONTENT)}: 标题重复：{title}")
         seen_titles.add(title)
         description = str(data.get("description", ""))
         if description and not 30 <= len(description) <= 220:
-            errors.append(f"{path.name}: description 应为 30–220 字")
+            errors.append(f"{path.relative_to(CONTENT)}: description 应为 30–220 字")
+        if description in seen_descriptions:
+            first = seen_descriptions[description].relative_to(CONTENT)
+            errors.append(f"{path.relative_to(CONTENT)}: description 与 {first} 重复")
+        elif description:
+            seen_descriptions[description] = path
         if len(body) < 200:
-            errors.append(f"{path.name}: 正文少于 200 字")
-        urls = re.findall(r"url:\s*[\"']?([^\"'\s]+)", path.read_text(encoding="utf-8"))
+            errors.append(f"{path.relative_to(CONTENT)}: 正文少于 200 字")
+        urls = re.findall(r"^\s+url:\s*[\"']?([^\"'\s]+)", path.read_text(encoding="utf-8"), re.M)
         if not urls:
-            errors.append(f"{path.name}: sources 中缺少可核验 URL")
+            errors.append(f"{path.relative_to(CONTENT)}: sources 中缺少可核验 URL")
         for url in urls:
             parsed = urlparse(url)
             if parsed.scheme not in {"http", "https"} or not parsed.netloc:
-                errors.append(f"{path.name}: 来源 URL 无效：{url}")
+                errors.append(f"{path.relative_to(CONTENT)}: 来源 URL 无效：{url}")
     if errors:
         print("内容检查失败：", file=sys.stderr)
         for error in errors:

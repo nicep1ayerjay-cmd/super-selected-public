@@ -5,11 +5,10 @@
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
   <div class="card-grid">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range .Sections.ByTitle }}
       {{ partial "card.html" . }}
     {{ else }}
       <div class="empty-state"><p>暂无内容。</p></div>
     {{ end }}
   </div>
 {{ end }}
-

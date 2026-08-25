@@ -1,5 +1,6 @@
-baseURL: "https://super-selected-daily.pages.dev/"
+baseURL: "https://goodbusiness.cloud/"
 locale: "zh-CN"
+timeZone: "Asia/Shanghai"
 title: "超级精选"
 enableRobotsTXT: true
 
