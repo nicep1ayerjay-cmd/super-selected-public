@@ -50,8 +50,11 @@
   </main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <p>超级精选 · 公开信息的每日推荐与事实索引</p>
-      <p><a href="{{ "/recommendations/" | relURL }}">全部推荐</a> · <a href="{{ "/about/" | relURL }}">关于超级精选</a></p>
+      <div>
+        <p>超级精选 · 公开信息的每日推荐与事实索引</p>
+        <p><a href="{{ "/recommendations/" | relURL }}">全部推荐</a> · <a href="{{ "/about/" | relURL }}">关于超级精选</a> · <a href="{{ .Site.Params.github }}">GitHub</a></p>
+      </div>
+      <p>相关网站：<a href="https://www.yanzhongai.com/trusted-choice-certification.html#featured-content">言中可信&优选</a> · <a href="https://flixclan.com/">综合行业信息站</a> · <a href="https://logintogether.com/">商业服务信息站</a> · <a href="https://leadintrading.com/">医疗健康信息站</a></p>
     </div>
   </footer>
 </body>

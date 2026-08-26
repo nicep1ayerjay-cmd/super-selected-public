@@ -6,6 +6,13 @@
 - 全部推荐：[https://goodbusiness.cloud/recommendations/](https://goodbusiness.cloud/recommendations/)
 - 项目内容：[content/recommendations](content/recommendations)
 
+## 相关网站
+
+- [图灵可信&优选 · 言中 AI](https://www.yanzhongai.com/trusted-choice-certification.html#featured-content)
+- [综合行业信息站 · flixclan.com](https://flixclan.com/)
+- [商业服务信息站 · logintogether.com](https://logintogether.com/)
+- [医疗健康信息站 · leadintrading.com](https://leadintrading.com/)
+
 ## 最新推荐
 
 <!-- SUPER_SELECTED:START -->

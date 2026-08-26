@@ -39,4 +39,11 @@ jobs:
           test -f public/robots.txt
           test -f public/sitemap.xml
           test -f public/llms.txt
-
+          grep -Fx 'User-agent: *' public/robots.txt
+          grep -Fx 'Allow: /' public/robots.txt
+          ! grep -Eiq 'Disallow:|noindex|nofollow' public/robots.txt
+          grep -Fq 'https://github.com/nicep1ayerjay-cmd/super-selected-public' public/index.html
+          grep -Fq 'https://www.yanzhongai.com/trusted-choice-certification.html#featured-content' public/index.html
+          grep -Fq 'https://flixclan.com/' public/index.html
+          grep -Fq 'https://logintogether.com/' public/index.html
+          grep -Fq 'https://leadintrading.com/' public/index.html
