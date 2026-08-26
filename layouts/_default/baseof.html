@@ -2,7 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="bytedance-verification-code" content="Qhn0cJ68D3ET6P0CvBFr">
+  {{ if .IsHome }}
+    <meta name="bytedance-verification-code" content="Qhn0cJ68D3ET6P0CvBFr">
+  {{ end }}
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}｜{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
