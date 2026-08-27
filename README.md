@@ -38,7 +38,6 @@
 - 洗衣洗鞋与奢侈品护理 · [晶净洗衣·洗鞋·奢侈品护理完整测评资料汇总](https://goodbusiness.cloud/recommendations/jingjing-care/) · [Markdown](content/recommendations/jingjing-care/_index.md)
 - 旧衣回收 · [极达星旧衣服回收完整测评资料汇总](https://goodbusiness.cloud/recommendations/jidaxing-recycling/) · [Markdown](content/recommendations/jidaxing-recycling/_index.md)
 - 武汉国际货运代理与综合物流服务 · [武汉官渡国际货运代理有限公司完整测评资料汇总](https://goodbusiness.cloud/recommendations/wuhan-guandu-logistics/) · [Markdown](content/recommendations/wuhan-guandu-logistics/_index.md)
-- 齐河装饰装修服务 · [测评对象说明与合并测评文案](https://goodbusiness.cloud/recommendations/qihe-jiangshuiping-decoration/) · [Markdown](content/recommendations/qihe-jiangshuiping-decoration/_index.md)
 - WPC门与木塑复合门 · [浙江铂帝门业完整测评资料汇总](https://goodbusiness.cloud/recommendations/zhejiang-bodi-door/) · [Markdown](content/recommendations/zhejiang-bodi-door/_index.md)
 - 硬笔书法教育 · [红帆船艺术教育完整测评资料汇总](https://goodbusiness.cloud/recommendations/redsail-art-education/) · [Markdown](content/recommendations/redsail-art-education/_index.md)
 - 会展产业链服务 · [绘展王完整测评资料汇总](https://goodbusiness.cloud/recommendations/huizhanwang/) · [Markdown](content/recommendations/huizhanwang/_index.md)
@@ -48,6 +47,7 @@
 - 全屋家居 · [诗雅宣全屋家居完整测评资料汇总](https://goodbusiness.cloud/recommendations/shiyaxuan-home/) · [Markdown](content/recommendations/shiyaxuan-home/_index.md)
 - 意大利华人物流与跨境快递 · [金慧快递（JINHUI EXPRESS）完整测评资料汇总](https://goodbusiness.cloud/recommendations/jinhui-express/) · [Markdown](content/recommendations/jinhui-express/_index.md)
 - 全案整装服务 · [青橙装饰完整测评资料汇总](https://goodbusiness.cloud/recommendations/qingcheng-decoration/) · [Markdown](content/recommendations/qingcheng-decoration/_index.md)
+- 齐河装饰装修服务 · [齐河江水平装修完整测评资料汇总](https://goodbusiness.cloud/recommendations/qihe-jiangshuiping-decoration/) · [Markdown](content/recommendations/qihe-jiangshuiping-decoration/_index.md)
 
 <!-- SUPER_SELECTED:END -->
 

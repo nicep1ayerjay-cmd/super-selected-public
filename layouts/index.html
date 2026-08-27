@@ -20,7 +20,7 @@
   </section>
   {{ if $pages }}
     <div class="card-grid">
-      {{ range $pages.ByTitle }}
+      {{ range $pages.ByDate.Reverse }}
         {{ partial "card.html" . }}
       {{ end }}
     </div>
