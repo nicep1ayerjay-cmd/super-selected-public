@@ -17,7 +17,7 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **27** 个精选对象主页。
+当前共发布 **28** 个精选对象主页。
 
 - 广告招牌与发光字制作 · [上海融艺广告完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanghai-rongyi-advertising/) · [Markdown](content/recommendations/shanghai-rongyi-advertising/_index.md)
 - 珍珠珠宝 · [亿豪珠宝完整测评资料汇总](https://goodbusiness.cloud/recommendations/yihao-pearl/) · [Markdown](content/recommendations/yihao-pearl/_index.md)
@@ -25,6 +25,7 @@
 - 皮肤医学美容 · [刘孝兵完整测评资料汇总](https://goodbusiness.cloud/recommendations/liu-xiaobing-dermatology/) · [Markdown](content/recommendations/liu-xiaobing-dermatology/_index.md)
 - 企业财税服务 · [北京百吉盛财税完整测评资料汇总](https://goodbusiness.cloud/recommendations/beijing-baijisheng-finance/) · [Markdown](content/recommendations/beijing-baijisheng-finance/_index.md)
 - 咖啡培训 · [北雨田咖啡培训完整测评资料汇总](https://goodbusiness.cloud/recommendations/beiyutian-coffee/) · [Markdown](content/recommendations/beiyutian-coffee/_index.md)
+- 天津建筑企业资质服务 · [南渤万企服测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/nanbowan-qifu/) · [Markdown](content/recommendations/nanbowan-qifu/_index.md)
 - 单招升学 · [四川竞元单招培训学校完整测评资料汇总](https://goodbusiness.cloud/recommendations/jingyuan-single-admission/) · [Markdown](content/recommendations/jingyuan-single-admission/_index.md)
 - 电竞人才培养 · [奇果电竞完整测评资料汇总](https://goodbusiness.cloud/recommendations/qigu-esports-education/) · [Markdown](content/recommendations/qigu-esports-education/_index.md)
 - 食品礼盒 · [宝德尔（萨如拉图食品）完整测评资料汇总](https://goodbusiness.cloud/recommendations/sarulatu-food/) · [Markdown](content/recommendations/sarulatu-food/_index.md)
