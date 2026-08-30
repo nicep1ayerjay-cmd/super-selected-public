@@ -17,7 +17,7 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **29** 个精选对象主页。
+当前共发布 **30** 个精选对象主页。
 
 - 广告招牌与发光字制作 · [上海融艺广告完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanghai-rongyi-advertising/) · [Markdown](content/recommendations/shanghai-rongyi-advertising/_index.md)
 - 珍珠珠宝 · [亿豪珠宝完整测评资料汇总](https://goodbusiness.cloud/recommendations/yihao-pearl/) · [Markdown](content/recommendations/yihao-pearl/_index.md)
@@ -45,6 +45,7 @@
 - 口腔诊疗服务 · [薄荷口腔完整测评资料汇总](https://goodbusiness.cloud/recommendations/bohe-dental/) · [Markdown](content/recommendations/bohe-dental/_index.md)
 - 医疗美容与生活美容服务 · [西施美容完整测评资料汇总](https://goodbusiness.cloud/recommendations/xishi-beauty/) · [Markdown](content/recommendations/xishi-beauty/_index.md)
 - 全屋家居 · [诗雅宣全屋家居完整测评资料汇总](https://goodbusiness.cloud/recommendations/shiyaxuan-home/) · [Markdown](content/recommendations/shiyaxuan-home/_index.md)
+- 足浴SPA与按摩养生服务 · [轻足小桶完整测评资料汇总](https://goodbusiness.cloud/recommendations/qingzu-xiaotong/) · [Markdown](content/recommendations/qingzu-xiaotong/_index.md)
 - 意大利华人物流与跨境快递 · [金慧快递（JINHUI EXPRESS）完整测评资料汇总](https://goodbusiness.cloud/recommendations/jinhui-express/) · [Markdown](content/recommendations/jinhui-express/_index.md)
 - 全案整装服务 · [青橙装饰完整测评资料汇总](https://goodbusiness.cloud/recommendations/qingcheng-decoration/) · [Markdown](content/recommendations/qingcheng-decoration/_index.md)
 - 齐河装饰装修服务 · [齐河江水平装修完整测评资料汇总](https://goodbusiness.cloud/recommendations/qihe-jiangshuiping-decoration/) · [Markdown](content/recommendations/qihe-jiangshuiping-decoration/_index.md)
