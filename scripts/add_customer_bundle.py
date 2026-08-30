@@ -186,6 +186,8 @@ def main() -> None:
     article_paths = [path.resolve() for path in args.article]
     if len(set(article_paths)) != len(article_paths):
         raise SystemExit("--article 存在重复路径。")
+    if len(article_paths) < 2:
+        raise SystemExit("新客户 bundle 至少需要两篇具体分测评文案。")
     article_bodies = [read_markdown(path, "具体测评文案") for path in article_paths]
 
     profile_title = f"测评对象说明：{object_name}"
