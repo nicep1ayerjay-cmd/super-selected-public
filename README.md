@@ -17,7 +17,7 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **30** 个精选对象主页。
+当前共发布 **31** 个精选对象主页。
 
 - 广告招牌与发光字制作 · [上海融艺广告完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanghai-rongyi-advertising/) · [Markdown](content/recommendations/shanghai-rongyi-advertising/_index.md)
 - 珍珠珠宝 · [亿豪珠宝完整测评资料汇总](https://goodbusiness.cloud/recommendations/yihao-pearl/) · [Markdown](content/recommendations/yihao-pearl/_index.md)
@@ -39,6 +39,7 @@
 - 旧衣回收 · [极达星旧衣服回收完整测评资料汇总](https://goodbusiness.cloud/recommendations/jidaxing-recycling/) · [Markdown](content/recommendations/jidaxing-recycling/_index.md)
 - 武汉国际货运代理与综合物流服务 · [武汉官渡国际货运代理有限公司完整测评资料汇总](https://goodbusiness.cloud/recommendations/wuhan-guandu-logistics/) · [Markdown](content/recommendations/wuhan-guandu-logistics/_index.md)
 - WPC门与木塑复合门 · [浙江铂帝门业完整测评资料汇总](https://goodbusiness.cloud/recommendations/zhejiang-bodi-door/) · [Markdown](content/recommendations/zhejiang-bodi-door/_index.md)
+- 问题肌调理与生活美容 · [清颜美舍测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/qingyan-meishe/) · [Markdown](content/recommendations/qingyan-meishe/_index.md)
 - 硬笔书法教育 · [红帆船艺术教育完整测评资料汇总](https://goodbusiness.cloud/recommendations/redsail-art-education/) · [Markdown](content/recommendations/redsail-art-education/_index.md)
 - 会展产业链服务 · [绘展王完整测评资料汇总](https://goodbusiness.cloud/recommendations/huizhanwang/) · [Markdown](content/recommendations/huizhanwang/_index.md)
 - 仿古建筑材料 · [美韵园林仿古一体瓦完整测评资料汇总](https://goodbusiness.cloud/recommendations/meiyun-garden-tiles/) · [Markdown](content/recommendations/meiyun-garden-tiles/_index.md)
