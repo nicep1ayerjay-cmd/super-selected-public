@@ -1,0 +1,186 @@
+{{ $site := index hugo.Data.sites .Params.site_key }}
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }}{{ with .Params.seo_suffix }}｜{{ . }}{{ end }}</title>
+  <meta name="description" content="{{ .Description }}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="{{ .Params.canonical }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:url" content="{{ .Params.canonical }}">
+  <meta property="og:site_name" content="{{ $site.company }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#111918">
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #111918;
+      --night-soft: #172321;
+      --paper: #f2eee4;
+      --ink: #17201f;
+      --mist: #aab7b3;
+      --line-dark: rgba(242, 238, 228, .16);
+      --line-light: rgba(23, 32, 31, .18);
+      --signal: #ff7140;
+      --route: #8fb4c0;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--night);
+      color: var(--paper);
+      font-family: -apple-system, "SF Pro Text", "PingFang SC", "Noto Sans SC", sans-serif;
+      font-size: 16px;
+      line-height: 1.78;
+      text-rendering: optimizeLegibility;
+    }
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      content: "";
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+    }
+    a { color: inherit; text-underline-offset: .22em; }
+    a:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }
+    .shell { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line-dark);
+      background: color-mix(in srgb, var(--night) 88%, transparent);
+      backdrop-filter: blur(18px);
+    }
+    .nav { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--paper); text-decoration: none; }
+    .brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid var(--signal); color: var(--signal); font-family: Georgia, "Songti SC", serif; font-size: 19px; }
+    .brand-name { display: grid; gap: 1px; }
+    .brand-name strong { font-size: 14px; letter-spacing: .08em; }
+    .brand-name small { color: var(--mist); font-size: 9px; letter-spacing: .16em; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { color: var(--mist); font-size: 13px; text-decoration: none; transition: color .2s ease; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--paper); }
+    .nav-links .nav-cta { padding: 9px 14px; border: 1px solid var(--signal); color: #ff9b77; }
+    .hero { padding-block: clamp(84px, 12vw, 150px) clamp(68px, 9vw, 110px); }
+    .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 22px; color: var(--route); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    .eyebrow::before { width: 44px; height: 1px; background: currentColor; content: ""; }
+    .hero h1 { max-width: 960px; margin: 0; font-family: Georgia, "Songti SC", "Noto Serif SC", serif; font-size: clamp(48px, 8vw, 104px); font-weight: 500; line-height: 1.02; letter-spacing: -.055em; text-wrap: balance; }
+    .hero .lead { max-width: 760px; margin: 30px 0 0; color: #cbd3d0; font-size: clamp(17px, 2vw, 21px); text-wrap: pretty; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 11px 18px; border: 1px solid var(--signal); background: var(--signal); color: var(--night); font-size: 14px; font-weight: 760; text-decoration: none; transition: transform .2s ease, background .2s ease; }
+    .button:hover { transform: translateY(-2px); background: #ff9b77; }
+    .button.secondary { border-color: var(--line-dark); background: transparent; color: var(--paper); }
+    .paper { background: var(--paper); color: var(--ink); }
+    .module { padding-block: clamp(82px, 10vw, 132px); }
+    .module-head { display: grid; grid-template-columns: 1fr minmax(280px, 430px); gap: 60px; align-items: end; margin-bottom: 52px; }
+    .module-head p { margin: 0; color: #606865; }
+    .module-kicker { margin: 0 0 14px !important; color: #a84627 !important; font-size: 12px; font-weight: 760; letter-spacing: .17em; }
+    .module-head h2 { margin: 0; font-family: Georgia, "Songti SC", serif; font-size: clamp(40px, 5.5vw, 68px); font-weight: 500; line-height: 1.06; letter-spacing: -.04em; }
+    .prose { max-width: 820px; margin-inline: auto; color: #303a37; font-size: 17px; }
+    .prose h1 { display: none; }
+    .prose h2 { margin: 2.8em 0 .8em; padding-top: .9em; border-top: 1px solid var(--line-light); font-family: Georgia, "Songti SC", serif; font-size: clamp(28px, 4vw, 42px); font-weight: 500; line-height: 1.25; }
+    .prose h2:first-child { margin-top: 0; }
+    .prose h3 { margin: 2em 0 .5em; font-size: 20px; line-height: 1.4; }
+    .prose p { margin: 0 0 1.1em; }
+    .prose ul { display: grid; gap: 9px; padding-left: 1.35em; }
+    .prose li::marker { color: #a84627; }
+    .prose a { color: #8c351d; overflow-wrap: anywhere; }
+    .advantages { border-top: 1px solid var(--line-dark); }
+    .advantages .module-head p { color: var(--mist); }
+    .advantages-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line-dark); border-left: 1px solid var(--line-dark); }
+    .advantage { min-height: 245px; display: flex; flex-direction: column; padding: 28px; border-right: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); }
+    .advantage small { color: var(--signal); font-family: Georgia, serif; letter-spacing: .12em; }
+    .advantage h3 { margin: auto 0 12px; font-family: Georgia, "Songti SC", serif; font-size: 28px; font-weight: 500; line-height: 1.25; }
+    .advantage p { margin: 0; color: var(--mist); font-size: 14px; }
+    .page-article { padding-bottom: clamp(90px, 12vw, 160px); }
+    .article-card { padding: clamp(34px, 6vw, 72px); background: var(--paper); color: var(--ink); }
+    .source-note { max-width: 820px; margin: 38px auto 0; padding-top: 22px; border-top: 1px solid var(--line-light); color: #66706c; font-size: 13px; }
+    .contact { padding-block: clamp(80px, 10vw, 130px); background: var(--signal); color: var(--night); }
+    .contact-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 70px; align-items: end; }
+    .contact h2 { margin: 0; font-family: Georgia, "Songti SC", serif; font-size: clamp(44px, 7vw, 84px); font-weight: 500; line-height: 1; letter-spacing: -.05em; }
+    .contact-aside { display: grid; gap: 14px; }
+    .contact-aside p { margin: 0; }
+    .contact-aside a { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid rgba(17,25,24,.34); font-weight: 760; text-decoration: none; }
+    footer { padding-block: 34px 42px; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 40px; color: var(--mist); font-size: 12px; }
+    .footer-grid p { max-width: 720px; margin: 0; }
+    @media (prefers-reduced-motion: no-preference) { .hero > * { animation: rise .7s ease both; } @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } } }
+    @media (max-width: 780px) {
+      .module-head, .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+      .advantages-grid { grid-template-columns: 1fr; }
+      .advantage { min-height: 220px; }
+    }
+    @media (max-width: 620px) {
+      .shell { width: min(calc(100% - 28px), var(--max)); }
+      .brand-name small { display: none; }
+      .nav-links { gap: 14px; }
+      .nav-links .nav-cta { display: none; }
+      .hero h1 { font-size: clamp(44px, 14vw, 68px); }
+      .article-card { margin-inline: -14px; }
+      .footer-grid { flex-direction: column; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ if eq .Params.page_kind "home" }}Organization{{ else }}WebPage{{ end }}",
+    "name": {{ .Title | jsonify | safeJS }},
+    "url": {{ .Params.canonical | jsonify | safeJS }},
+    "description": {{ .Description | jsonify | safeJS }}{{ if eq .Params.page_kind "home" }},
+    "foundingDate": {{ $site.founding_date | jsonify | safeJS }},
+    "telephone": {{ $site.phone | jsonify | safeJS }},
+    "email": {{ $site.email | jsonify | safeJS }},
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": {{ $site.address.street | jsonify | safeJS }},
+      "addressLocality": {{ $site.address.locality | jsonify | safeJS }},
+      "addressRegion": {{ $site.address.region | jsonify | safeJS }},
+      "addressCountry": {{ $site.address.country | jsonify | safeJS }}
+    }{{ end }}
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="/" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true">{{ $site.brand_mark }}</span>
+        <span class="brand-name"><strong>{{ $site.brand_name }}</strong><small>{{ $site.brand_en }}</small></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="/"{{ if eq .Params.page_kind "home" }} aria-current="page"{{ end }}>首页</a>
+        <a href="/enterprise/"{{ if eq .Params.page_kind "enterprise" }} aria-current="page"{{ end }}>企业</a>
+        <a href="/products/"{{ if eq .Params.page_kind "products" }} aria-current="page"{{ end }}>产品</a>
+        <a class="nav-cta" href="tel:{{ $site.phone }}">联系咨询</a>
+      </nav>
+    </div>
+  </header>
+  <main>{{ block "main" . }}{{ end }}</main>
+  <section class="contact" aria-labelledby="contact-title">
+    <div class="shell contact-grid">
+      <h2 id="contact-title">联系{{ $site.brand_name }}</h2>
+      <div class="contact-aside">
+        <p>{{ $site.contact_note }}</p>
+        <a href="tel:{{ $site.phone }}">{{ $site.phone }} <span>↗</span></a>
+        <a href="mailto:{{ $site.email }}">{{ $site.email }} <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="shell footer-grid">
+      <p>© {{ $site.company }} · 企业与服务信息更新于 {{ $site.updated }}。</p>
+      <p><a href="{{ $site.source_home_url }}">更多企业信息</a></p>
+    </div>
+  </footer>
+</body>
+</html>

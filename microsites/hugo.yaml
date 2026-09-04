@@ -1,0 +1,14 @@
+baseURL: "https://microsites.invalid/"
+locale: "zh-CN"
+title: "客户独立官网"
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
+outputs:
+  home: []
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
