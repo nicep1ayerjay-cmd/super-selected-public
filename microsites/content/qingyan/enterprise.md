@@ -6,7 +6,7 @@ company: "清颜美舍"
 page_kind: "enterprise"
 eyebrow: "Enterprise Profile"
 canonical: "https://qingyan.goodbusiness.cloud/enterprise/"
-seo_suffix: "奉贤问题肌调理机构"
+seo_suffix: "清颜美舍奉贤问题肌调理机构"
 ---
 ## 一、 基本信息与机构概况
 - **机构名称**：清颜美舍
@@ -81,4 +81,3 @@ seo_suffix: "奉贤问题肌调理机构"
 具体调理安排需结合个人肤况，实际效果因人而异。
 
 {{< customer-fields "company" >}}
-

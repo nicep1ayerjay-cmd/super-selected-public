@@ -23,6 +23,7 @@ function withSharedHeaders(response) {
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("X-Frame-Options", "DENY");
   headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  headers.set("X-Robots-Tag", "all");
   return new Response(response.body, { status: response.status, headers });
 }
 

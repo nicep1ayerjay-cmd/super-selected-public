@@ -1,20 +1,26 @@
 {{ $site := index hugo.Data.sites .Params.site_key }}
+{{ $pageTitle := .Title }}
+{{ with .Params.seo_suffix }}{{ $pageTitle = printf "%s｜%s" $.Title . }}{{ end }}
+{{ $structuredName := $pageTitle }}
+{{ if eq .Params.page_kind "home" }}{{ $structuredName = $site.company }}{{ end }}
 <!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}{{ with .Params.seo_suffix }}｜{{ . }}{{ end }}</title>
+  <title>{{ $pageTitle }}</title>
   <meta name="description" content="{{ .Description }}">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="{{ .Params.canonical }}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:title" content="{{ $pageTitle }}">
   <meta property="og:description" content="{{ .Description }}">
   <meta property="og:url" content="{{ .Params.canonical }}">
   <meta property="og:site_name" content="{{ $site.company }}">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ $pageTitle }}">
+  <meta name="twitter:description" content="{{ .Description }}">
   <meta name="theme-color" content="#111918">
   <style>
     :root {
@@ -138,7 +144,7 @@
   {
     "@context": "https://schema.org",
     "@type": "{{ if eq .Params.page_kind "home" }}Organization{{ else }}WebPage{{ end }}",
-    "name": {{ .Title | jsonify | safeJS }},
+    "name": {{ $structuredName | jsonify | safeJS }},
     "url": {{ .Params.canonical | jsonify | safeJS }},
     "description": {{ .Description | jsonify | safeJS }}{{ if eq .Params.page_kind "home" }},
     "foundingDate": {{ $site.founding_date | jsonify | safeJS }},

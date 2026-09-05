@@ -6,7 +6,7 @@ company: "清颜美舍"
 page_kind: "products"
 eyebrow: "Products & Services"
 canonical: "https://qingyan.goodbusiness.cloud/products/"
-seo_suffix: "痘痘肌、敏感肌与痘印调理"
+seo_suffix: "清颜美舍痘痘肌、敏感肌与痘印调理"
 ---
 {{< customer-fields "products" >}}
 
