@@ -2,12 +2,12 @@
 {{- if not $source -}}{{- errorf "%s: 缺少客户资料" .Page.File.Path -}}{{- end -}}
 {{- $group := .Get 0 -}}
 {{- if eq $group "company" -}}
-  {{- $labels := slice (dict "key" "companyName" "label" "公司名称") (dict "key" "productService" "label" "企业业务与服务") (dict "key" "brandStory" "label" "品牌故事") (dict "key" "trustEndorsement" "label" "合作客户") (dict "key" "trustEndorsementUrl" "label" "企业官网") -}}
+  {{- $labels := slice (dict "key" "companyName" "label" "公司名称") (dict "key" "productService" "label" "企业业务与服务") (dict "key" "brandStory" "label" "品牌故事") (dict "key" "trustEndorsement" "label" "合作客户") (dict "key" "trustEndorsementUrl" "label" "企业官网或联系方式") -}}
   {{- range $labels -}}
     {{- $label := .label -}}
     {{- $key := .key -}}
     {{- with index $source.knowledgePayload.fields .key -}}
-      <section class="customer-field"><h2>{{ $label }}</h2><div class="field-copy">{{ if eq $key "trustEndorsementUrl" }}<a href="{{ . }}">{{ . }}</a>{{ else }}{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ $line }}{{ end }}{{ end }}</div></section>
+      <section class="customer-field"><h2>{{ $label }}</h2><div class="field-copy">{{ if and (eq $key "trustEndorsementUrl") (or (hasPrefix . "https://") (hasPrefix . "http://")) }}<a href="{{ . }}">{{ . }}</a>{{ else }}{{ range $i, $line := split . "\n" }}{{ if $i }}<br>{{ end }}{{ $line }}{{ end }}{{ end }}</div></section>
     {{- end -}}
   {{- end -}}
 {{- else if eq $group "products" -}}

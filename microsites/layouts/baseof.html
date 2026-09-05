@@ -175,8 +175,8 @@
       <h2 id="contact-title">联系{{ $site.brand_name }}</h2>
       <div class="contact-aside">
         <p>{{ $site.contact_note }}</p>
-        <a href="tel:{{ $site.phone }}">{{ $site.phone }} <span>↗</span></a>
-        <a href="mailto:{{ $site.email }}">{{ $site.email }} <span>↗</span></a>
+        {{ with $site.phone }}<a href="tel:{{ . }}">{{ . }} <span>↗</span></a>{{ end }}
+        {{ with $site.email }}<a href="mailto:{{ . }}">{{ . }} <span>↗</span></a>{{ end }}
       </div>
     </div>
   </section>

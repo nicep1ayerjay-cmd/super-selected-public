@@ -3,6 +3,13 @@ const SITES = {
     siteKey: "guandu",
     canonicalUrl: "https://guandu.goodbusiness.cloud/",
     title: "武汉官渡国际货运代理有限公司",
+    lastmod: "2026-09-05",
+  },
+  "qingyan.goodbusiness.cloud": {
+    siteKey: "qingyan",
+    canonicalUrl: "https://qingyan.goodbusiness.cloud/",
+    title: "清颜美舍",
+    lastmod: "2026-09-06",
   },
 };
 
@@ -55,7 +62,7 @@ export default {
 
     if (url.pathname === "/sitemap.xml") {
       const urls = ["", "enterprise/", "products/"]
-        .map((path) => `<url><loc>${site.canonicalUrl}${path}</loc><lastmod>2026-09-05</lastmod></url>`)
+        .map((path) => `<url><loc>${site.canonicalUrl}${path}</loc><lastmod>${site.lastmod}</lastmod></url>`)
         .join("");
       const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`;
       return textResponse(xml, "application/xml");

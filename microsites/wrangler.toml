@@ -6,6 +6,10 @@ compatibility_date = "2026-09-04"
 pattern = "guandu.goodbusiness.cloud"
 custom_domain = true
 
+[[routes]]
+pattern = "qingyan.goodbusiness.cloud"
+custom_domain = true
+
 [assets]
 directory = "./public"
 binding = "ASSETS"
