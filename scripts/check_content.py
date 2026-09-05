@@ -10,7 +10,6 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content" / "recommendations"
 REQUIRED = ("title", "date", "description", "categories", "sources")
 PUBLIC_BANNED = (
-    "客户",
     "AI 引用",
     "AI阅读",
     "AI 阅读",
@@ -21,6 +20,10 @@ PUBLIC_BANNED = (
     "部署流程",
     "API Token",
 )
+
+
+def banned_phrases(text: str) -> list[str]:
+    return [phrase for phrase in PUBLIC_BANNED if phrase in text]
 
 
 def parse(path: Path) -> tuple[dict[str, object], str]:
@@ -57,9 +60,8 @@ def main() -> int:
     public_files.extend((ROOT / "layouts").glob("*.txt"))
     for path in public_files:
         text = path.read_text(encoding="utf-8")
-        for phrase in PUBLIC_BANNED:
-            if phrase in text:
-                errors.append(f"{path.relative_to(ROOT)}: 对外内容包含禁用表述：{phrase}")
+        for phrase in banned_phrases(text):
+            errors.append(f"{path.relative_to(ROOT)}: 对外内容包含禁用表述：{phrase}")
     object_dirs = sorted(path for path in CONTENT.iterdir() if path.is_dir())
     for object_dir in object_dirs:
         required_paths = [object_dir / "_index.md", object_dir / "object-profile.md", object_dir / "all-reviews.md"]

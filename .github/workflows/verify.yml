@@ -17,7 +17,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check recommendation metadata
-        run: python3 scripts/check_content.py
+        run: |
+          python3 -m unittest scripts/test_check_content.py
+          python3 scripts/check_content.py
 
       - name: Verify generated README is current
         run: |
