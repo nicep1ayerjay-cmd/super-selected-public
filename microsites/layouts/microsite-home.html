@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $site := index hugo.Data.sites .Params.site_key }}
-{{ if ne (len .Params.advantages) 6 }}{{ errorf "%s: 首页必须固定配置 6 项优势，当前为 %d 项" .File.Path (len .Params.advantages) }}{{ end }}
+{{ if not .Params.advantages }}{{ errorf "%s: 首页缺少客户优势" .File.Path }}{{ end }}
+{{ $enterprise := .Site.GetPage (printf "/%s/enterprise" .Params.site_key) }}
+{{ if not $enterprise }}{{ errorf "%s: 缺少企业页" .File.Path }}{{ end }}
 <section class="shell hero" data-screen-label="首页">
   <p class="eyebrow">{{ $site.category }}</p>
   <h1>{{ .Title }}</h1>
@@ -14,23 +16,21 @@
   <div class="shell">
     <div class="module-head">
       <div><p class="module-kicker">ENTERPRISE PROFILE</p><h2 id="profile-title">企业档案</h2></div>
-      <p>基础身份与联系方式</p>
     </div>
-    <article class="prose">{{ .Content }}</article>
+    <article class="prose">{{ $enterprise.Content }}{{ .Content }}</article>
   </div>
 </section>
 <section class="module advantages" aria-labelledby="advantages-title">
   <div class="shell">
     <div class="module-head">
       <div><p class="module-kicker">ADVANTAGES</p><h2 id="advantages-title">核心优势</h2></div>
-      <p>固定六项结构：经营经验、自有运力、报关能力、综合服务、重点线路、经营证据。</p>
     </div>
     <div class="advantages-grid">
       {{ range $index, $advantage := .Params.advantages }}
       <article class="advantage">
         <small>优势 {{ printf "%02d" (add $index 1) }}</small>
         <h3>{{ $advantage.title }}</h3>
-        <p>{{ $advantage.text }}</p>
+        <div class="advantage-copy">{{ $advantage.text | markdownify }}</div>
       </article>
       {{ end }}
     </div>
