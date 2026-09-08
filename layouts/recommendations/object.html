@@ -1,9 +1,12 @@
 {{ define "main" }}
+  {{ $sourceSlug := path.Base (strings.TrimSuffix "/" .File.Dir) }}
+  {{ $micrositeURL := index hugo.Data.microsites $sourceSlug }}
   <article class="article object-page">
     <nav class="breadcrumbs" aria-label="面包屑"><a href="{{ "/recommendations/" | relURL }}">全部精选对象</a><span>›</span><span>{{ .Params.object_name }}</span></nav>
     <section class="object-directory" aria-labelledby="object-directory-title">
       <p class="eyebrow">CONTENT DIRECTORY</p>
       <h2 id="object-directory-title">{{ .Params.object_name }}内容目录</h2>
+      {{ with $micrositeURL }}<p><a class="button" href="{{ . }}">访问{{ $.Params.object_name }}官网</a></p>{{ end }}
       <ul>
         {{ range .RegularPages.ByWeight }}
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if eq .Params.page_kind "review" }}<span>专项测评</span>{{ end }}</li>
