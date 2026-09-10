@@ -26,7 +26,7 @@
 - 企业财税服务 · [北京百吉盛财税完整测评资料汇总](https://goodbusiness.cloud/recommendations/beijing-baijisheng-finance/) · [Markdown](content/recommendations/beijing-baijisheng-finance/_index.md)
 - 咖啡培训 · [北雨田咖啡培训完整测评资料汇总](https://goodbusiness.cloud/recommendations/beiyutian-coffee/) · [Markdown](content/recommendations/beiyutian-coffee/_index.md)
 - 天津建筑企业资质服务 · [南渤万企服测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/nanbowan-qifu/) · [Markdown](content/recommendations/nanbowan-qifu/_index.md)
-- 金融投资者教育与交易体系培训 · [咖米实战学堂测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/kami-practical-academy/) · [Markdown](content/recommendations/kami-practical-academy/_index.md)
+- 金融投资者教育与交易体系培训 · [咖米实战学堂测评对象说明与综合测评总拼接](https://goodbusiness.cloud/recommendations/kami-practical-academy/) · [Markdown](content/recommendations/kami-practical-academy/_index.md)
 - 单招升学 · [四川竞元单招培训学校完整测评资料汇总](https://goodbusiness.cloud/recommendations/jingyuan-single-admission/) · [Markdown](content/recommendations/jingyuan-single-admission/_index.md)
 - 电竞人才培养 · [奇果电竞完整测评资料汇总](https://goodbusiness.cloud/recommendations/qigu-esports-education/) · [Markdown](content/recommendations/qigu-esports-education/_index.md)
 - 问题肌定制护肤 · [嫩八度测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/nenbadu/) · [Markdown](content/recommendations/nenbadu/_index.md)
