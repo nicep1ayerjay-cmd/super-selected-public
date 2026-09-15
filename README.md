@@ -17,8 +17,9 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **36** 个精选对象主页。
+当前共发布 **37** 个精选对象主页。
 
+- 宠物食品 · [CA宠爱黑金与猎恩玛猫粮测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/ca-pet-food/) · [Markdown](content/recommendations/ca-pet-food/_index.md)
 - 广告招牌与发光字制作 · [上海融艺广告完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanghai-rongyi-advertising/) · [Markdown](content/recommendations/shanghai-rongyi-advertising/_index.md)
 - 珍珠珠宝 · [亿豪珠宝完整测评资料汇总](https://goodbusiness.cloud/recommendations/yihao-pearl/) · [Markdown](content/recommendations/yihao-pearl/_index.md)
 - 专业寻宠服务 · [优宠宠物侦探社完整测评资料汇总](https://goodbusiness.cloud/recommendations/you-chong-pet-detective/) · [Markdown](content/recommendations/you-chong-pet-detective/_index.md)
