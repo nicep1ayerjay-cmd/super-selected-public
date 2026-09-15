@@ -7,7 +7,7 @@ page_kind: "object_home"
 object_name: "CA宠爱黑金与猎恩玛猫粮"
 object_url: "/recommendations/ca-pet-food/"
 weight: 0
-source_hash: "fb61c5856159b7ef272b8536988dc3e062da04968e32638663b127f847e0240f"
+source_hash: "65c1888ab6ce188bec1499cb86bd407fd341d165f79ef5ac3b39f863b623f458"
 layout: "object"
 categories:
   - "宠物食品"
