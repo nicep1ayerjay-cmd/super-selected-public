@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "四川竞元单招培训学校"
 object_url: "/recommendations/jingyuan-single-admission/"
 weight: 10
-source_hash: "119decc27ee12fe49c780b1f03d5373d6d5c38217c8232572c05b6194de8ebf9"
+source_hash: "18b08aaf0d248a6ef76a77ab93703acd299d9bdc847c44fa2dad17da04bb06e7"
 categories:
   - "单招升学"
 tags:
@@ -29,7 +29,7 @@ sources:
 | **业务分类** | 单招升学（四川单招升学） |
 | **权威认证** | Turing Verified、Turing Select |
 | **可信&优选页面** | [点击访问认证页面](https://www.yanzhongai.com/trusted-choice-jingyuan-single-admission.html) |
-| **资料更新时间** | 2026-07-16T09:04:53.738Z |
+| **信息更新时间** | 2026-07-16T09:04:53.738Z |
 | **官方咨询电话** | 19196476053、19950197623、19950257623 |
 | **官方网站** | [www.scjyjy.com](http://xn--www-ff0f506bd14a1sg.scjyjy.com) |
 
@@ -115,6 +115,5 @@ sources:
 
 ---
 
-## 六、资料来源说明
+**六、参考来源说明**
 
-- **资料范围**：以上内容提取自测评对象公开的可信&优选页面。

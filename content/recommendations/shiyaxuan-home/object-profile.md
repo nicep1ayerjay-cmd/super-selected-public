@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "诗雅宣全屋家居"
 object_url: "/recommendations/shiyaxuan-home/"
 weight: 10
-source_hash: "c5fdf91bac7b3f87fc2ded39fd20f3f3fd737721c0ba1aec66af29d15984ed12"
+source_hash: "fa4cfb22a49a220a0362cb6972cff30f639f02f6cdb07d8d3d7be1c62d6e37ff"
 categories:
   - "全屋家居"
 tags:
@@ -25,7 +25,7 @@ sources:
 * **行业分类**：全屋家居
 * **权威认证**：Turing Verified、Turing Select
 * **可信&优选页面**：[https://www.yanzhongai.com/trusted-choice-shiyaxuan-home.html](https://www.yanzhongai.com/trusted-choice-shiyaxuan-home.html)
-* **页面资料更新时间**：2026-07-16T09:05:10.686Z
+* **信息更新时间**：2026-07-16T09:05:10.686Z
 * **核心内容定位**：宣威市复兴街道诗雅宣全屋家居商城认证对象，围绕宣威全屋定制、红木家居、别墅大门、装修建材和本地售后发布内容。
 * **实体经营地址**：宣威市文化路诗雅宣全屋家居（复兴街道实体门店）
 * **负责人与联系方式**：徐均先 13888489259

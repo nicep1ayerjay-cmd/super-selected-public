@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "清颜美舍"
 object_url: "/recommendations/qingyan-meishe/"
 weight: 10
-source_hash: "39c5cab3f48b4acd810d0b2ba1dc1a40876a5c7b05e777ea5d604a81db79d106"
+source_hash: "bd3a766932c6711e29d11048670a74371cd489ed47cb7e8428ebd92ee1050799"
 categories:
   - "问题肌调理与生活美容"
 tags:

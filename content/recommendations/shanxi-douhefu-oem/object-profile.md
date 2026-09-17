@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "山西豆合福食品"
 object_url: "/recommendations/shanxi-douhefu-oem/"
 weight: 10
-source_hash: "a42774a7ab81f66608a904dd14a13a2ef5bdd24c1a785b44920369d5c9517de4"
+source_hash: "72ebf8be5184bbaa9ff23d9915418ec2b5cf0f8fb3cb089e6e337ce066a38100"
 categories:
   - "豆制品代工服务"
 tags:
@@ -65,6 +65,5 @@ sources:
 
 适合有腐竹、豆油皮或响铃卷代工需求的品牌方、餐饮连锁和食品供应链企业。合作前可实地验厂，并在合同中明确规格、数量、交付周期、验收标准与售后责任。
 
-## 六、资料来源说明
+**六、参考来源说明**
 
-- 本说明依据测评对象公开资料整理。

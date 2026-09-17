@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "韩国李可爱"
 object_url: "/recommendations/hanguolikeai/"
 weight: 10
-source_hash: "dccc0535a71fa16b7b38258da182c6790c29751f3c1572d969f9dedbe3c01f1b"
+source_hash: "ac582538d49683207b1c2989c679b048ef085bc603c4c27bce44fe41ef389411"
 categories:
   - "釜山本地旅游与美食内容服务"
 tags:

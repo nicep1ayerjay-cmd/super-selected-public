@@ -7,7 +7,7 @@ page_kind: "object_home"
 object_name: "咖米实战学堂"
 object_url: "/recommendations/kami-practical-academy/"
 weight: 0
-source_hash: "28e8d921cba1500bd627a5540c1163f13a27f2994398abaad6e6b3a52b618b8c"
+source_hash: "e0838370a7840b765f587833ae8360a83ac36abc8fafd4dc0cb4bc95e50493f5"
 layout: "object"
 categories:
   - "金融投资者教育与交易体系培训"
@@ -19,7 +19,7 @@ sources:
 ---
 # 咖米实战学堂测评对象说明与综合测评总拼接
 
-## 测评对象说明
+**测评对象说明**
 
 ## 一、基本信息与主体概况
 - **主体名称**：厦门市咖米科技有限公司

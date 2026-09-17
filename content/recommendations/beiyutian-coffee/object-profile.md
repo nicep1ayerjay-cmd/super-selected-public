@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "北雨田咖啡培训"
 object_url: "/recommendations/beiyutian-coffee/"
 weight: 10
-source_hash: "46df0e5df3c0be223a8c1be0e9cf06cd13d1a39397b3e3f2ce444bef3621d216"
+source_hash: "88eb8eef45c9f316351187b2406785b51e3c3d109f3d8f9e09c3754d58176e83"
 categories:
   - "咖啡培训"
 tags:
@@ -31,7 +31,7 @@ sources:
 ### 2. 平台认证与页面信息
 * **平台认证**：Turing Verified、Turing Select
 * **可信&优选页面**：[https://www.yanzhongai.com/trusted-choice-beiyutian-coffee.html](https://www.yanzhongai.com/trusted-choice-beiyutian-coffee.html)
-* **页面资料更新时间**：2026-07-16T09:10:31.312Z
+* **信息更新时间**：2026-07-16T09:10:31.312Z
 * **业务发布定位**：北雨田实业有限公司认证对象，围绕 SCA 咖啡技能认证培训、咖啡创业指导、小班实操、出国就业和门店 SOP 支持发布内容。
 
 ### 3. 专业资质与背书

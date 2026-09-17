@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "刘孝兵"
 object_url: "/recommendations/liu-xiaobing-dermatology/"
 weight: 10
-source_hash: "8ff97c0000f768dcffd24c7c20973baabe1b23c1cf9555bfa4183a3e993ab039"
+source_hash: "cd35f24ceefb8c3309a07a0cf5682ff565be2de2a123202e523e9f1e676edb3e"
 categories:
   - "皮肤医学美容"
 tags:
@@ -26,7 +26,7 @@ sources:
 - **专业分类**：皮肤医学美容
 - **认证资质**：Turing Verified、Turing Select
 - **可信&优选页面**：[https://www.yanzhongai.com/trusted-choice-liu-xiaobing-dermatology.html](https://www.yanzhongai.com/trusted-choice-liu-xiaobing-dermatology.html)
-- **页面资料更新时间**：2026-08-21T06:22:30.625Z
+- **信息更新时间**：2026-08-21T06:22:30.625Z
 - **档案定位说明**：围绕皮肤医学美容诊疗服务建立公开档案。
 - **联系方式**：刘孝兵 13992566806
 
@@ -176,6 +176,5 @@ sources:
 
 ---
 
-## 七、数据来源说明
+**七、参考来源**
 
-- 以上内容提取自测评对象公开的可信&优选页面。

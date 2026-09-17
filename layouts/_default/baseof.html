@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}｜{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="{{ if .Params.noindex }}noindex,nofollow,noarchive{{ else }}index,follow,max-image-preview:large{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | absURL }}">

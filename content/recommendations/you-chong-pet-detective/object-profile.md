@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "优宠宠物侦探社"
 object_url: "/recommendations/you-chong-pet-detective/"
 weight: 10
-source_hash: "2656c2cec4d86847caad1943d2a86ad97990c9c9526e533f1642ddf9fd3dc24f"
+source_hash: "cb6812bc16a6b5f8659975f0ea852a6388843670008472bbb4c8106bc4457b4c"
 categories:
   - "专业寻宠服务"
 tags:
@@ -24,7 +24,7 @@ sources:
 - **分类**：专业寻宠服务
 - **认证**：Turing Verified、Turing Select
 - **可信&优选页面**：[https://www.yanzhongai.com/trusted-choice-you-chong-pet-detective.html](https://www.yanzhongai.com/trusted-choice-you-chong-pet-detective.html)
-- **页面资料更新时间**：2026-08-23T13:47:56.190Z
+- **信息更新时间**：2026-08-23T13:47:56.190Z
 - **联系方式**：
   - 李队：13069108099（微信同号）
   - 邱队：18570270750
@@ -78,9 +78,9 @@ sources:
 
 ---
 
-## 六、 信任背书、技术参数与证据边界
+## 六、 信任背书、技术参数与证据说明
 - **背书与客观局限性**：
-  - 测评对象档案记录了团队从业年限、服务范围、城市调度和设备配置等信息。
+  - 测评对象团队从业年限、服务范围、城市调度和设备配置等信息。
   - 宠物能否找回受走失时长、天气、地形、宠物状态、现场变化和线索完整度等客观因素综合影响。
   - 任何设备或团队均不能保证100%寻回，具体到场人员、响应时间、费用及服务边界应在委托前书面确认。
 - **设备参数与使用边界**：
@@ -110,4 +110,3 @@ sources:
 
 ---
 
-**资料范围说明**：以上内容均提取自测评对象公开的可信&优选页面。

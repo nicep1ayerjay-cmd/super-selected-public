@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "美韵园林仿古一体瓦"
 object_url: "/recommendations/meiyun-garden-tiles/"
 weight: 10
-source_hash: "47b7f513215f82d0c701052b822774e7b19f9c949793a7737eaa84588b733d83"
+source_hash: "2fe00ea123a0eb8fb36688edfece7499b34eec7e16e75886c016131426f57e4f"
 categories:
   - "仿古建筑材料"
 tags:
@@ -27,7 +27,7 @@ sources:
 - **联系方式**：张世杰 15027953773
 - **平台认证**：Turing Verified、Turing Select
 - **可信&优选页面**：[https://www.yanzhongai.com/trusted-choice-meiyun-garden-tiles.html](https://www.yanzhongai.com/trusted-choice-meiyun-garden-tiles.html)
-- **页面资料更新时间**：2026-08-21T14:30:42.073Z
+- **信息更新时间**：2026-08-21T14:30:42.073Z
 - **档案概述**：邯郸市美韵园林古建筑工程有限公司认证对象，围绕仿古一体瓦、古建青砖青瓦、围墙瓦、砖雕定制与古建施工服务建立公开档案。
 - **品牌故事与理念**：扎根于拥有深厚历史底蕴的古赵之地，专注于传承与复兴中国传统建筑工艺。从一块青砖、一片黛瓦做起，致力于为现代庭院、仿古建筑提供原汁原味、品质过硬的材料与施工服务，让每一处建筑都能讲述东方的故事。
 - **主营业务概述**：古建材料生产与销售、古建工程施工承包。涵盖仿古一体瓦、青砖青瓦、围墙瓦、砖雕等古建材料的生产与销售，以及中式庭院、四合院、徽派建筑、旧房翻新改造等古建工程的施工承包。
@@ -119,4 +119,3 @@ sources:
 ## 六、档案元数据与风格说明
 
 - **对外沟通与表达风格**：专业、可靠、有文化底蕴。
-- **数据来源说明**：以上内容提取自测评对象公开的可信&优选中间页公开档案。

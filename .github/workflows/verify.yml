@@ -43,7 +43,9 @@ jobs:
           test -f public/llms.txt
           grep -Fx 'User-agent: *' public/robots.txt
           grep -Fx 'Allow: /' public/robots.txt
-          ! grep -Eiq 'Disallow:|noindex|nofollow' public/robots.txt
+          test "$(grep -Ec '^Disallow:' public/robots.txt)" = '1'
+          grep -Fx 'Disallow: /recommendations/yihao-pearl/' public/robots.txt
+          grep -Fq 'noindex,nofollow,noarchive' public/recommendations/yihao-pearl/index.html
           grep -Fq 'https://github.com/nicep1ayerjay-cmd/super-selected-public' public/index.html
           grep -Fq 'https://www.yanzhongai.com/trusted-choice-certification.html#featured-content' public/index.html
           grep -Fq 'https://flixclan.com/' public/index.html

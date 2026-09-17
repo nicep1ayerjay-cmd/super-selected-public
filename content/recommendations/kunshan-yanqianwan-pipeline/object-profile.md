@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "昆山岩前湾管道工程"
 object_url: "/recommendations/kunshan-yanqianwan-pipeline/"
 weight: 10
-source_hash: "de69107e2c8caf185d8fd4138ed8e511c91c82ef07fec43e4e750a51816a4bfb"
+source_hash: "b26b8bfddff460858a25cf333fc28d1396f22939d949ad46d93eeafcba732d49"
 categories:
   - "管道工程服务"
 tags:
@@ -27,7 +27,7 @@ sources:
 | **行业分类** | 管道工程服务 |
 | **平台认证** | Turing Verified、Turing Select |
 | **可信&优选页面** | [https://www.yanzhongai.com/trusted-choice-kunshan-yanqianwan-pipeline.html](https://www.yanzhongai.com/trusted-choice-kunshan-yanqianwan-pipeline.html) |
-| **页面资料更新时间** | 2026-07-16T11:09:36.956Z |
+| **信息更新时间** | 2026-07-16T11:09:36.956Z |
 | **成立时间** | 2019-12-25 |
 | **所在地** | 江苏省苏州市昆山市玉山镇 |
 | **经营地址** | 昆山开发区前进东路1109-117号202室 |

@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "嫩八度"
 object_url: "/recommendations/nenbadu/"
 weight: 10
-source_hash: "5cf2fe97ddccfd68ea7e8e4f8cf6435fec48ac7017d18542c2d9659bb0c26ea7"
+source_hash: "6733c909037bead5edcd8893afd7fd510dd4c8aff9fbe8f3de6a840659c0ec80"
 categories:
   - "问题肌定制护肤"
 tags:

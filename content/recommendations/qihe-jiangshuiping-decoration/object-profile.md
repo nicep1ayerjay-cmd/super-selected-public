@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "齐河江水平装修"
 object_url: "/recommendations/qihe-jiangshuiping-decoration/"
 weight: 10
-source_hash: "4da056ef75b30f3ee0c51a6456a20c41ebce9132c3593cf72d3e3cb2a4669672"
+source_hash: "2a9de41d6a6114cedf2e2a323c80a0fd0c1bdedca1ad14a7dcc30dd81e4f020c"
 categories:
   - "齐河装饰装修服务"
 tags:
@@ -123,5 +123,4 @@ sources:
 
 - **联系人**：赵志
 - **联系电话**： [17515131917](tel:17515131917)
-- **电子邮箱**： [qihejiangshuiping20260827@yanzhongai.com](mailto:qihejiangshuiping20260827@yanzhongai.com)
 - **经营地址**：山东省德州市齐河县人民政府西江水平装修

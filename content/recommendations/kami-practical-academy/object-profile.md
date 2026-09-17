@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "咖米实战学堂"
 object_url: "/recommendations/kami-practical-academy/"
 weight: 10
-source_hash: "ddeb6980c8754ea21ecd9a85ff1d140aecceee9bae40b4aacd4f82aa0c19991c"
+source_hash: "fe251ca6083b583e64a0ed00e77c0a5432da7a053c33bbc6091406ec734fa452"
 categories:
   - "金融投资者教育与交易体系培训"
 tags:

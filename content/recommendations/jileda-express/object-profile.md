@@ -7,7 +7,7 @@ page_kind: "object_profile"
 object_name: "寄乐达-2"
 object_url: "/recommendations/jileda-express/"
 weight: 10
-source_hash: "7a52654cf1d39e3a70c5794d4f6880607ea62c9a8bba959837db518a16dbd6c4"
+source_hash: "4edf4ae37933c9197c34dad3afb8dbff9844ca7a775012e6bba9e520b43b015f"
 categories:
   - "快递比价与聚合寄件服务"
 tags:
