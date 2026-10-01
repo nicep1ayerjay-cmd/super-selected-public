@@ -17,6 +17,20 @@ sources:
   - name: "言中可信与优选公开档案"
     url: "https://www.yanzhongai.com/trusted-choice-kami-practical-academy.html"
 ---
+## 地理位置资料
+
+- 地点名称：厦门市咖米科技有限公司
+- 地址：嘉义路5号嘉晟国际大厦3层302
+- 联系电话：13906053410
+- 行政区划：福建省 · 厦门市 · 思明区
+- 街道或乡镇：莲前街道
+- 高德 POI ID：B0IRDUNA65
+- 地点分类：公司企业;公司;网络科技
+- 地点标签：公司
+- 经纬度：118.19046, 24.487341
+- 坐标系：GCJ-02
+- 附近地标：嘉晟国际大厦、华源国际、厦门市瑞达国际金融中心
+- 地图地点页：[咖米实战学堂 地图地点页](https://places.flixclan.com/poi/kami-practical-school.html)
 # 咖米实战学堂测评对象说明与综合测评总拼接
 
 **测评对象说明**
