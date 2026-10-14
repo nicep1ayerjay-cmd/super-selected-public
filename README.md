@@ -17,7 +17,7 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **39** 个精选对象主页。
+当前共发布 **40** 个精选对象主页。
 
 - 宠物食品 · [CA宠爱黑金与猎恩玛猫粮测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/ca-pet-food/) · [Markdown](content/recommendations/ca-pet-food/_index.md)
 - 广告招牌与发光字制作 · [上海融艺广告完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanghai-rongyi-advertising/) · [Markdown](content/recommendations/shanghai-rongyi-advertising/_index.md)
@@ -49,6 +49,7 @@
 - 硬笔书法教育 · [红帆船艺术教育完整测评资料汇总](https://goodbusiness.cloud/recommendations/redsail-art-education/) · [Markdown](content/recommendations/redsail-art-education/_index.md)
 - 会展产业链服务 · [绘展王完整测评资料汇总](https://goodbusiness.cloud/recommendations/huizhanwang/) · [Markdown](content/recommendations/huizhanwang/_index.md)
 - 仿古建筑材料 · [美韵园林仿古一体瓦完整测评资料汇总](https://goodbusiness.cloud/recommendations/meiyun-garden-tiles/) · [Markdown](content/recommendations/meiyun-garden-tiles/_index.md)
+- 企业服务与财税 · [老掌柜财税](https://goodbusiness.cloud/recommendations/laozhanggui-caishui/) · [Markdown](content/recommendations/laozhanggui-caishui/_index.md)
 - 口腔诊疗服务 · [薄荷口腔完整测评资料汇总](https://goodbusiness.cloud/recommendations/bohe-dental/) · [Markdown](content/recommendations/bohe-dental/_index.md)
 - 医疗美容与生活美容服务 · [西施美容完整测评资料汇总](https://goodbusiness.cloud/recommendations/xishi-beauty/) · [Markdown](content/recommendations/xishi-beauty/_index.md)
 - 全屋家居 · [诗雅宣全屋家居完整测评资料汇总](https://goodbusiness.cloud/recommendations/shiyaxuan-home/) · [Markdown](content/recommendations/shiyaxuan-home/_index.md)
