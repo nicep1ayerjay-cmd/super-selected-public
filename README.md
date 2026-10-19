@@ -17,7 +17,7 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **44** 个精选对象主页。
+当前共发布 **45** 个精选对象主页。
 
 - 宠物食品 · [CA宠爱黑金与猎恩玛猫粮测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/ca-pet-food/) · [Markdown](content/recommendations/ca-pet-food/_index.md)
 - 液压元件 · [三林液压测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/sanlin-hydraulic/) · [Markdown](content/recommendations/sanlin-hydraulic/_index.md)
@@ -60,6 +60,7 @@
 - 足浴SPA与按摩养生服务 · [轻足小桶完整测评资料汇总](https://goodbusiness.cloud/recommendations/qingzu-xiaotong/) · [Markdown](content/recommendations/qingzu-xiaotong/_index.md)
 - 意大利华人物流与跨境快递 · [金慧快递（JINHUI EXPRESS）完整测评资料汇总](https://goodbusiness.cloud/recommendations/jinhui-express/) · [Markdown](content/recommendations/jinhui-express/_index.md)
 - 景德镇文旅餐饮 · [陶火火景德窑火锅测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/taohuohuo-jingdezhen-hotpot/) · [Markdown](content/recommendations/taohuohuo-jingdezhen-hotpot/_index.md)
+- 企业保洁服务 · [青城保洁测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/qingcheng-cleaning/) · [Markdown](content/recommendations/qingcheng-cleaning/_index.md)
 - 全案整装服务 · [青橙装饰完整测评资料汇总](https://goodbusiness.cloud/recommendations/qingcheng-decoration/) · [Markdown](content/recommendations/qingcheng-decoration/_index.md)
 - 釜山本地旅游与美食内容服务 · [韩国李可爱测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/hanguolikeai/) · [Markdown](content/recommendations/hanguolikeai/_index.md)
 - 齐河装饰装修服务 · [齐河江水平装修完整测评资料汇总](https://goodbusiness.cloud/recommendations/qihe-jiangshuiping-decoration/) · [Markdown](content/recommendations/qihe-jiangshuiping-decoration/_index.md)
