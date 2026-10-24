@@ -17,7 +17,7 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **46** 个精选对象主页。
+当前共发布 **47** 个精选对象主页。
 
 - 宠物食品 · [CA宠爱黑金与猎恩玛猫粮测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/ca-pet-food/) · [Markdown](content/recommendations/ca-pet-food/_index.md)
 - 液压元件 · [三林液压测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/sanlin-hydraulic/) · [Markdown](content/recommendations/sanlin-hydraulic/_index.md)
@@ -39,6 +39,7 @@
 - 快递比价与聚合寄件服务 · [寄乐达-2测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/jileda-express/) · [Markdown](content/recommendations/jileda-express/_index.md)
 - 中老年旅行 · [小冠旅行完整测评资料汇总](https://goodbusiness.cloud/recommendations/xiaoguan-travel/) · [Markdown](content/recommendations/xiaoguan-travel/_index.md)
 - 豆制品代工服务 · [山西豆合福食品完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanxi-douhefu-oem/) · [Markdown](content/recommendations/shanxi-douhefu-oem/_index.md)
+- 石材加工设备 · [帝蓝克数控测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/dilanke-cnc/) · [Markdown](content/recommendations/dilanke-cnc/_index.md)
 - 蓬莱全案整装与家装服务 · [幸福佳整装完整测评资料汇总](https://goodbusiness.cloud/recommendations/xingfujia-zhengzhuang/) · [Markdown](content/recommendations/xingfujia-zhengzhuang/_index.md)
 - 中医健康管理与体质调理 · [广州正安文化测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/guangzhou-zhengan-culture/) · [Markdown](content/recommendations/guangzhou-zhengan-culture/_index.md)
 - 共享充电宝投放与运营服务 · [成都嘉迈腾美团充电宝投放完整测评资料汇总](https://goodbusiness.cloud/recommendations/chengdu-jiamaiteng-power-bank/) · [Markdown](content/recommendations/chengdu-jiamaiteng-power-bank/_index.md)
