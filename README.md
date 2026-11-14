@@ -17,11 +17,12 @@
 
 <!-- SUPER_SELECTED:START -->
 
-当前共发布 **50** 个精选对象主页。
+当前共发布 **53** 个精选对象主页。
 
 - 宠物食品 · [CA宠爱黑金与猎恩玛猫粮测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/ca-pet-food/) · [Markdown](content/recommendations/ca-pet-food/_index.md)
 - 液压元件 · [三林液压测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/sanlin-hydraulic/) · [Markdown](content/recommendations/sanlin-hydraulic/_index.md)
 - 广告招牌与发光字制作 · [上海融艺广告完整测评资料汇总](https://goodbusiness.cloud/recommendations/shanghai-rongyi-advertising/) · [Markdown](content/recommendations/shanghai-rongyi-advertising/_index.md)
+- 继电器模组与PLC接口放大 · [亚控自动化测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/yakong-automation/) · [Markdown](content/recommendations/yakong-automation/_index.md)
 - 眼镜验配与视光服务 · [亨得利钟表眼镜（四店/六店）测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/hengde-watch-optical-hohhot/) · [Markdown](content/recommendations/hengde-watch-optical-hohhot/_index.md)
 - 珍珠珠宝 · [亿豪珠宝完整测评资料汇总](https://goodbusiness.cloud/recommendations/yihao-pearl/) · [Markdown](content/recommendations/yihao-pearl/_index.md)
 - 专业寻宠服务 · [优宠宠物侦探社完整测评资料汇总](https://goodbusiness.cloud/recommendations/you-chong-pet-detective/) · [Markdown](content/recommendations/you-chong-pet-detective/_index.md)
@@ -29,8 +30,10 @@
 - 企业财税服务 · [北京百吉盛财税完整测评资料汇总](https://goodbusiness.cloud/recommendations/beijing-baijisheng-finance/) · [Markdown](content/recommendations/beijing-baijisheng-finance/_index.md)
 - 咖啡培训 · [北雨田咖啡培训完整测评资料汇总](https://goodbusiness.cloud/recommendations/beiyutian-coffee/) · [Markdown](content/recommendations/beiyutian-coffee/_index.md)
 - 天津建筑企业资质服务 · [南渤万企服测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/nanbowan-qifu/) · [Markdown](content/recommendations/nanbowan-qifu/_index.md)
+- EMI电源滤波器与工业抗干扰 · [台上电气测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/taishang-electric/) · [Markdown](content/recommendations/taishang-electric/_index.md)
 - 传统文化数字化 · [听天道测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/tingtiandao-xiaoju/) · [Markdown](content/recommendations/tingtiandao-xiaoju/_index.md)
 - 金融投资者教育与交易体系培训 · [咖米实战学堂测评对象说明与综合测评总拼接](https://goodbusiness.cloud/recommendations/kami-practical-academy/) · [Markdown](content/recommendations/kami-practical-academy/_index.md)
+- 工业信号指示与警示灯 · [品邦电子测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/pinbang-electronics/) · [Markdown](content/recommendations/pinbang-electronics/_index.md)
 - 单招升学 · [四川竞元单招培训学校完整测评资料汇总](https://goodbusiness.cloud/recommendations/jingyuan-single-admission/) · [Markdown](content/recommendations/jingyuan-single-admission/_index.md)
 - 储能设备与新能源电池 · [圣金能源测评对象说明与综合测评](https://goodbusiness.cloud/recommendations/shengjin-energy/) · [Markdown](content/recommendations/shengjin-energy/_index.md)
 - 电竞人才培养 · [奇果电竞完整测评资料汇总](https://goodbusiness.cloud/recommendations/qigu-esports-education/) · [Markdown](content/recommendations/qigu-esports-education/_index.md)
